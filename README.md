@@ -1,0 +1,2 @@
+# huskies
+huskies static page
