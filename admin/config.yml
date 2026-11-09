@@ -1,0 +1,622 @@
+{
+  "backend": {
+    "name": "turbo-github",
+    "turbo_site_id": "d402b4ff-fa37-4ec6-9961-984df326c8bf",
+    "branch": "main"
+  },
+  "publish_mode": "editorial_workflow",
+  "media_folder": "images/uploads",
+  "public_folder": "/images/uploads",
+  "locale": "sk",
+  "site_url": "https://www.huskies.sk",
+  "collections": [
+    {
+      "name": "stranka",
+      "label": "Obsah stránky",
+      "files": [
+        {
+          "label": "Texty a obrázky",
+          "name": "obsah",
+          "file": "content/site.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Navigácia",
+              "name": "header",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "☰ Menu",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "O nás",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Tréningy",
+                  "name": "text_03",
+                  "widget": "string"
+                },
+                {
+                  "label": "Tréneri",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Členstvo",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "FAQ",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "Pridaj sa k nám",
+                  "name": "text_07",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Úvod",
+              "name": "domov",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Detský lyžiarsky klub · Banská Bystrica a okolie",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Malí lyžiari.",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Veľké zážitky.",
+                  "name": "text_03",
+                  "widget": "string"
+                },
+                {
+                  "label": "Budujeme radosť z pohybu, istotu na lyžiach a partiu, do ktorej s…",
+                  "name": "text_04",
+                  "widget": "text"
+                },
+                {
+                  "label": "Mám záujem o členstvo →",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "Ako trénujeme",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "⛷️ Lyžovanie",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "🏃 Všestranný pohyb",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "🤝 Komunita",
+                  "name": "text_09",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "O nás",
+              "name": "o-nas",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Naša filozofia",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Viac než len lyžovanie",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Chceme, aby deti športovali s radosťou, rozvíjali svoje schopnost…",
+                  "name": "text_03",
+                  "widget": "text"
+                },
+                {
+                  "label": "Lyžiarske zručnosti",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Postupne budujeme techniku, sebavedomie a bezpečné návyky na sneh…",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "Všestranný pohyb",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "Rovnováha, koordinácia, obratnosť a kondícia sú základom zdravého…",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "Dobrá partia",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "Deti sa učia spolupracovať, podporovať sa a užívať si spoločné šp…",
+                  "name": "text_09",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Tréningy",
+              "name": "treningy",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Tréningový program",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Hýbeme sa celý rok",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Štandardne trénujeme dvakrát týždenne. Presný rozvrh a lokality d…",
+                  "name": "text_03",
+                  "widget": "text"
+                },
+                {
+                  "label": "01 / JESEŇ",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Suchá príprava",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "Hry, koordinácia, sila, rovnováha a všestranné pohybové aktivity.",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "02 / ZIMA",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "Na lyžiach",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "Pravidelné tréningy na svahu, rozvoj techniky a športovej istoty.",
+                  "name": "text_09",
+                  "widget": "string"
+                },
+                {
+                  "label": "03 / SEZÓNA",
+                  "name": "text_10",
+                  "widget": "string"
+                },
+                {
+                  "label": "Preteky a výjazdy",
+                  "name": "text_11",
+                  "widget": "string"
+                },
+                {
+                  "label": "Oblastné preteky a spoločné sústredenia vrátane plánovaného výjaz…",
+                  "name": "text_12",
+                  "widget": "string"
+                },
+                {
+                  "label": "Aktuálne dni, časy a miesta tréningov vám radi upresníme.",
+                  "name": "text_13",
+                  "widget": "string"
+                },
+                {
+                  "label": "Kontaktujte nás",
+                  "name": "text_14",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Tréneri",
+              "name": "treneri",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Kto vedie deti",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Tréneri, ktorým záleží na každom dieťati",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Veríme v povzbudivý prístup, primerané výzvy a individuálny rozvo…",
+                  "name": "text_03",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "label": "Galéria",
+              "name": "galeria",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Zo života klubu",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Takto vyzerá naša partia",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Skutočné momenty z tréningov, svahov a spoločných zážitkov.",
+                  "name": "text_03",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Členstvo",
+              "name": "clenstvo",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Transparentné podmienky",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Čo obnáša členstvo?",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Rodičia majú vedieť vopred, koľko času a financií šport vyžaduje.…",
+                  "name": "text_03",
+                  "widget": "text"
+                },
+                {
+                  "label": "Výjazdy a sústredenia:",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "doprava, ubytovanie, skipasy a náklady na trénerov sa riešia osob…",
+                  "name": "text_05",
+                  "widget": "text"
+                },
+                {
+                  "label": "Aktuálnu výšku členského poplatku a podmienky vám radi vysvetlíme…",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "Členstvo v klube",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "Poďte do toho s nami",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "Radi vám povieme viac o tréningoch, dostupnej kapacite a nákladoc…",
+                  "name": "text_09",
+                  "widget": "string"
+                },
+                {
+                  "label": "Opýtať sa na členstvo",
+                  "name": "text_10",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Otázky a odpovede",
+              "name": "faq",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Otázky rodičov",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Všetko dôležité na jednom mieste",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Odpovede na najčastejšie otázky pred prvým tréningom aj počas sez…",
+                  "name": "text_03",
+                  "widget": "string"
+                },
+                {
+                  "label": "Pre aký vek je klub určený?",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Primárne pre deti vo veku približne 5 až 10 rokov z Banskej Bystr…",
+                  "name": "text_05",
+                  "widget": "text"
+                },
+                {
+                  "label": "Musí už dieťa vedieť lyžovať?",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "Požadovanú vstupnú úroveň ešte klub upresní. Napíšte nám vek a ly…",
+                  "name": "text_07",
+                  "widget": "text"
+                },
+                {
+                  "label": "Ako často a kde sú tréningy?",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "Štandardne dvakrát týždenne. Na jeseň prebieha suchá pohybová prí…",
+                  "name": "text_09",
+                  "widget": "text"
+                },
+                {
+                  "label": "Aký je členský poplatok?",
+                  "name": "text_10",
+                  "widget": "string"
+                },
+                {
+                  "label": "Aktuálnu výšku poplatku a informácie o tom, čo zahŕňa, vám radi p…",
+                  "name": "text_11",
+                  "widget": "string"
+                },
+                {
+                  "label": "Koľko stoja preteky a sústredenia?",
+                  "name": "text_12",
+                  "widget": "string"
+                },
+                {
+                  "label": "Každá akcia má vlastný rozpočet. Samostatne sa rieši napríklad do…",
+                  "name": "text_13",
+                  "widget": "text"
+                },
+                {
+                  "label": "Je účasť na pretekoch povinná?",
+                  "name": "text_14",
+                  "widget": "string"
+                },
+                {
+                  "label": "Klub sa zúčastňuje oblastných pretekov počas sezóny. Povinnosť úč…",
+                  "name": "text_15",
+                  "widget": "text"
+                },
+                {
+                  "label": "Čo potrebuje dieťa na tréning?",
+                  "name": "text_16",
+                  "widget": "string"
+                },
+                {
+                  "label": "Na suchú prípravu vhodné športové oblečenie, obuv a vodu. Na sneh…",
+                  "name": "text_17",
+                  "widget": "text"
+                },
+                {
+                  "label": "Ako funguje výjazd do Kreischbergu?",
+                  "name": "text_18",
+                  "widget": "string"
+                },
+                {
+                  "label": "Plánuje sa spoločný lyžiarsky výjazd. Informácie o termíne, ubyto…",
+                  "name": "text_19",
+                  "widget": "text"
+                },
+                {
+                  "label": "Čo ak dieťa ochorie alebo vynechá tréning?",
+                  "name": "text_20",
+                  "widget": "string"
+                },
+                {
+                  "label": "Pravidlá náhradných tréningov, odhlásenia a prípadného vrátenia p…",
+                  "name": "text_21",
+                  "widget": "text"
+                },
+                {
+                  "label": "Ako sa môžeme pridať?",
+                  "name": "text_22",
+                  "widget": "string"
+                },
+                {
+                  "label": "Napíšte nám alebo zavolajte. Radi vám povieme viac o aktuálnej ka…",
+                  "name": "text_23",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Kontakt",
+              "name": "kontakt",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Pridajte sa k nám",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "Máte doma malého športovca?",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "Napíšte nám alebo zavolajte. Radi vám povieme viac o tréningoch, …",
+                  "name": "text_03",
+                  "widget": "text"
+                },
+                {
+                  "label": "huSKIes · Banská Bystrica a okolie",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Ozvite sa nám",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "Do správy nám môžete napísať vek dieťaťa a jeho lyžiarske skúseno…",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "skihuskiesbb@gmail.com",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "+421 949 783 283",
+                  "name": "text_08",
+                  "widget": "string"
+                },
+                {
+                  "label": "Napísať e-mail →",
+                  "name": "text_09",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Pätička",
+              "name": "footer",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "hu",
+                  "name": "text_01",
+                  "widget": "string"
+                },
+                {
+                  "label": "SKI",
+                  "name": "text_02",
+                  "widget": "string"
+                },
+                {
+                  "label": "es",
+                  "name": "text_03",
+                  "widget": "string"
+                },
+                {
+                  "label": "Malí lyžiari. Veľké zážitky.",
+                  "name": "text_04",
+                  "widget": "string"
+                },
+                {
+                  "label": "Kontakt",
+                  "name": "text_05",
+                  "widget": "string"
+                },
+                {
+                  "label": "skihuskiesbb@gmail.com",
+                  "name": "text_06",
+                  "widget": "string"
+                },
+                {
+                  "label": "+421 949 783 283",
+                  "name": "text_07",
+                  "widget": "string"
+                },
+                {
+                  "label": "huSKIes",
+                  "name": "text_08",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Obrázky",
+              "name": "obrazky",
+              "widget": "object",
+              "fields": [
+                {
+                  "label": "Logo",
+                  "name": "logo",
+                  "widget": "image"
+                },
+                {
+                  "label": "Úvodný obrázok",
+                  "name": "uvod",
+                  "widget": "image"
+                },
+                {
+                  "label": "Fotografia pri tréneroch",
+                  "name": "treneri",
+                  "widget": "image"
+                },
+                {
+                  "label": "Galéria",
+                  "name": "galeria",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "label": "Fotografia",
+                      "name": "obrazok",
+                      "widget": "image"
+                    },
+                    {
+                      "label": "Popis fotografie",
+                      "name": "popis",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

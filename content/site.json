@@ -1,0 +1,136 @@
+{
+  "header": {
+    "text_01": "☰ Menu",
+    "text_02": "O nás",
+    "text_03": "Tréningy",
+    "text_04": "Tréneri",
+    "text_05": "Členstvo",
+    "text_06": "FAQ",
+    "text_07": "Pridaj sa k nám"
+  },
+  "domov": {
+    "text_01": "Detský lyžiarsky klub · Banská Bystrica a okolie",
+    "text_02": "Malí lyžiari.",
+    "text_03": "Veľké zážitky.",
+    "text_04": "Budujeme radosť z pohybu, istotu na lyžiach a partiu, do ktorej sa deti tešia. Pre deti približne od 5 do 10 rokov.",
+    "text_05": "Mám záujem o členstvo →",
+    "text_06": "Ako trénujeme",
+    "text_07": "⛷️ Lyžovanie",
+    "text_08": "🏃 Všestranný pohyb",
+    "text_09": "🤝 Komunita"
+  },
+  "o-nas": {
+    "text_01": "Naša filozofia",
+    "text_02": "Viac než len lyžovanie",
+    "text_03": "Chceme, aby deti športovali s radosťou, rozvíjali svoje schopnosti a vytvárali si priateľstvá. Záleží nám aj na dobrej partii rodičov.",
+    "text_04": "Lyžiarske zručnosti",
+    "text_05": "Postupne budujeme techniku, sebavedomie a bezpečné návyky na snehu.",
+    "text_06": "Všestranný pohyb",
+    "text_07": "Rovnováha, koordinácia, obratnosť a kondícia sú základom zdravého športového rozvoja.",
+    "text_08": "Dobrá partia",
+    "text_09": "Deti sa učia spolupracovať, podporovať sa a užívať si spoločné športové zážitky."
+  },
+  "treningy": {
+    "text_01": "Tréningový program",
+    "text_02": "Hýbeme sa celý rok",
+    "text_03": "Štandardne trénujeme dvakrát týždenne. Presný rozvrh a lokality doplníme podľa aktuálnej sezóny.",
+    "text_04": "01 / JESEŇ",
+    "text_05": "Suchá príprava",
+    "text_06": "Hry, koordinácia, sila, rovnováha a všestranné pohybové aktivity.",
+    "text_07": "02 / ZIMA",
+    "text_08": "Na lyžiach",
+    "text_09": "Pravidelné tréningy na svahu, rozvoj techniky a športovej istoty.",
+    "text_10": "03 / SEZÓNA",
+    "text_11": "Preteky a výjazdy",
+    "text_12": "Oblastné preteky a spoločné sústredenia vrátane plánovaného výjazdu do Kreischbergu.",
+    "text_13": "Aktuálne dni, časy a miesta tréningov vám radi upresníme.",
+    "text_14": "Kontaktujte nás"
+  },
+  "treneri": {
+    "text_01": "Kto vedie deti",
+    "text_02": "Tréneri, ktorým záleží na každom dieťati",
+    "text_03": "Veríme v povzbudivý prístup, primerané výzvy a individuálny rozvoj. Spoznajte ľudí, ktorí s deťmi trávia čas na tréningoch aj výjazdoch."
+  },
+  "galeria": {
+    "text_01": "Zo života klubu",
+    "text_02": "Takto vyzerá naša partia",
+    "text_03": "Skutočné momenty z tréningov, svahov a spoločných zážitkov."
+  },
+  "clenstvo": {
+    "text_01": "Transparentné podmienky",
+    "text_02": "Čo obnáša členstvo?",
+    "text_03": "Rodičia majú vedieť vopred, koľko času a financií šport vyžaduje. Preto jasne oddeľujeme základné tréningy od výjazdov a ďalších nákladov.",
+    "text_04": "Výjazdy a sústredenia:",
+    "text_05": "doprava, ubytovanie, skipasy a náklady na trénerov sa riešia osobitne podľa konkrétnej akcie. Náklady na trénerov sa rozpočítavajú medzi zúčastnené trénujúce deti.",
+    "text_06": "Aktuálnu výšku členského poplatku a podmienky vám radi vysvetlíme.",
+    "text_07": "Členstvo v klube",
+    "text_08": "Poďte do toho s nami",
+    "text_09": "Radi vám povieme viac o tréningoch, dostupnej kapacite a nákladoch na sezónu.",
+    "text_10": "Opýtať sa na členstvo"
+  },
+  "faq": {
+    "text_01": "Otázky rodičov",
+    "text_02": "Všetko dôležité na jednom mieste",
+    "text_03": "Odpovede na najčastejšie otázky pred prvým tréningom aj počas sezóny.",
+    "text_04": "Pre aký vek je klub určený?",
+    "text_05": "Primárne pre deti vo veku približne 5 až 10 rokov z Banskej Bystrice a okolia. Zaradenie konkrétneho dieťaťa potvrdí trénerka podľa skúseností a možností skupiny.",
+    "text_06": "Musí už dieťa vedieť lyžovať?",
+    "text_07": "Požadovanú vstupnú úroveň ešte klub upresní. Napíšte nám vek a lyžiarske skúsenosti dieťaťa a spoločne preveríme vhodnosť zaradenia.",
+    "text_08": "Ako často a kde sú tréningy?",
+    "text_09": "Štandardne dvakrát týždenne. Na jeseň prebieha suchá pohybová príprava, v zime tréningy na snehu. Konkrétne časy a miesta budú uvedené v aktuálnom rozvrhu.",
+    "text_10": "Aký je členský poplatok?",
+    "text_11": "Aktuálnu výšku poplatku a informácie o tom, čo zahŕňa, vám radi poskytneme pri kontakte.",
+    "text_12": "Koľko stoja preteky a sústredenia?",
+    "text_13": "Každá akcia má vlastný rozpočet. Samostatne sa rieši napríklad doprava, ubytovanie, skipas a náklady na trénerov, ktoré sa rozdelia medzi zúčastnené trénujúce deti. Presnú kalkuláciu dostanú rodičia pred potvrdením účasti.",
+    "text_14": "Je účasť na pretekoch povinná?",
+    "text_15": "Klub sa zúčastňuje oblastných pretekov počas sezóny. Povinnosť účasti a pravidlá ospravedlnenia je potrebné ešte potvrdiť s vedením klubu.",
+    "text_16": "Čo potrebuje dieťa na tréning?",
+    "text_17": "Na suchú prípravu vhodné športové oblečenie, obuv a vodu. Na sneh primeranú lyžiarsku výstroj vrátane prilby. Presný zoznam podľa typu tréningu poskytne trénerka.",
+    "text_18": "Ako funguje výjazd do Kreischbergu?",
+    "text_19": "Plánuje sa spoločný lyžiarsky výjazd. Informácie o termíne, ubytovaní, doprave, skipasoch, dozore a konečnej cene dostanú rodičia v samostatných organizačných pokynoch.",
+    "text_20": "Čo ak dieťa ochorie alebo vynechá tréning?",
+    "text_21": "Pravidlá náhradných tréningov, odhlásenia a prípadného vrátenia poplatkov budú doplnené do členských podmienok.",
+    "text_22": "Ako sa môžeme pridať?",
+    "text_23": "Napíšte nám alebo zavolajte. Radi vám povieme viac o aktuálnej kapacite a ďalšom postupe."
+  },
+  "kontakt": {
+    "text_01": "Pridajte sa k nám",
+    "text_02": "Máte doma malého športovca?",
+    "text_03": "Napíšte nám alebo zavolajte. Radi vám povieme viac o tréningoch, kapacite a možnostiach zapojenia.",
+    "text_04": "huSKIes · Banská Bystrica a okolie",
+    "text_05": "Ozvite sa nám",
+    "text_06": "Do správy nám môžete napísať vek dieťaťa a jeho lyžiarske skúsenosti.",
+    "text_07": "skihuskiesbb@gmail.com",
+    "text_08": "+421 949 783 283",
+    "text_09": "Napísať e-mail →"
+  },
+  "footer": {
+    "text_01": "hu",
+    "text_02": "SKI",
+    "text_03": "es",
+    "text_04": "Malí lyžiari. Veľké zážitky.",
+    "text_05": "Kontakt",
+    "text_06": "skihuskiesbb@gmail.com",
+    "text_07": "+421 949 783 283",
+    "text_08": "huSKIes"
+  },
+  "obrazky": {
+    "logo": "/logo-huskies.png",
+    "uvod": "/hero-huskies.jpg",
+    "treneri": "/images/ski-1.jpg",
+    "galeria": [
+      {
+        "obrazok": "/images/ski-2.jpg",
+        "popis": "Lyžovanie s klubom huSKIes"
+      },
+      {
+        "obrazok": "/images/ski-3.jpg",
+        "popis": "Spoločná prechádzka v prírode"
+      },
+      {
+        "obrazok": "/images/ski-4.jpg",
+        "popis": "Spoločné chvíle na snehu"
+      }
+    ]
+  }
+}
