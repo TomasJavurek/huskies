@@ -35,16 +35,28 @@
         "popis": "Spoločná prechádzka v prírode"
       },
       {
-        "obrazok": "/images/ski-4.jpg",
+        "obrazok": "/images/uploads/1.jpeg",
         "popis": "Spoločné chvíle na snehu"
       },
       {
         "obrazok": "/images/uploads/foto.jpeg",
-        "popis": "neviem"
+        "popis": "Naladenie pred štartom."
       },
       {
         "obrazok": "/images/uploads/2.jpeg",
-        "popis": "neviem"
+        "popis": "Úsmevy po pretekoch."
+      },
+      {
+        "obrazok": "/images/uploads/3.jpeg",
+        "popis": "Teším sa, že som tu."
+      },
+      {
+        "obrazok": "/images/uploads/4.jpeg",
+        "popis": "Preteky o Goralský klobúčik."
+      },
+      {
+        "obrazok": "/images/uploads/9.jpeg",
+        "popis": "Keď sa zima opýta, čo si robil v lete."
       }
     ]
   },
