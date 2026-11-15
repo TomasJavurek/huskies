@@ -3,7 +3,7 @@
     "text_01": "Pridajte sa k nám",
     "text_02": "Máte doma malého športovca?",
     "text_03": "Napíšte nám alebo zavolajte. Radi vám povieme viac o tréningoch, kapacite a možnostiach zapojenia.",
-    "text_04": "huSKIes · Banská Bystrica a okolie",
+    "text_04": "huSKies · Banská Bystrica a okolie",
     "text_05": "Ozvite sa nám",
     "text_06": "Do správy nám môžete napísať vek dieťaťa a jeho lyžiarske skúsenosti.",
     "text_07": "skihuskiesbb@gmail.com",
@@ -57,7 +57,7 @@
     "text_02": "Čo obnáša členstvo?",
     "text_03": "Rodičia majú vedieť vopred, koľko času a financií šport vyžaduje. Preto jasne oddeľujeme základné tréningy od výjazdov, sústredení a ďalších nákladov.",
     "text_04": "Výjazdy a sústredenia:",
-    "text_05": "Doprava, ubytovanie, skipassy a náklady na trénerov sa riešia osobitne podľa konkrétnej akcie. Náklady na trénerov sa rozpočítavajú medzi zúčastnené trénujúce deti.",
+    "text_05": "Doprava, ubytovanie, skipasy a náklady na trénerov sa riešia osobitne podľa konkrétnej akcie. Náklady na trénerov sa rozpočítavajú medzi zúčastnené trénujúce deti.",
     "text_06": "Aktuálnu výšku členského poplatku a podmienky vám radi vysvetlíme.",
     "text_07": "Členstvo v klube",
     "text_08": "Poďte do toho s nami",
@@ -80,7 +80,7 @@
   "faq": {
     "text_20": "Čo ak dieťa ochorie alebo vynechá tréning?",
     "text_10": "Aký je členský poplatok?",
-    "text_21": "Pravidlá náhradných tréningov, odhlásenia a prípadného vrátenia poplatkov budú doplnené do členských podmienok.",
+    "text_21": "Pravidlá náhradných tréningov, odhlásenia a prípadného vrátenia poplatkov budú doplnené do členských podmienok.\nV prípade absencie dieťaťa na tréningu je potrebné informovať trénerku vopred. Po uzdravení sa dieťa vráti medzi nás a pokračuje vo výcviku. Školné sa platí na celý rok a náhrady za vynechané tréningy sa nevracajú. Iné je to však napríklad v prípade, že sa dieťa vážnejšie zraní a vynechá značnú časť sezóny, kedy sa vracia alikvotná čiastka školného. Tieto prípady sa riešia individuálne v závislosti od prípadu.",
     "text_11": "Aktuálnu výšku poplatku a informácie o tom, čo zahŕňa, vám radi poskytneme pri kontakte.",
     "text_22": "Ako sa môžeme pridať?",
     "text_01": "Otázky rodičov",
@@ -91,16 +91,16 @@
     "text_03": "Odpovede na najčastejšie otázky pred prvým tréningom aj počas sezóny.",
     "text_14": "Je účasť na pretekoch povinná?",
     "text_04": "Pre aký vek je klub určený?",
-    "text_15": "Klub sa zúčastňuje oblastných pretekov počas sezóny. Povinnosť účasti a pravidlá ospravedlnenia je potrebné ešte potvrdiť s vedením klubu.",
-    "text_05": "Primárne pre deti vo veku približne 5 až 10 rokov z Banskej Bystrice a okolia. Zaradenie konkrétneho dieťaťa potvrdí trénerka podľa skúseností a možností skupiny.",
+    "text_15": "Klub sa zúčastňuje počas sezóny oblastných pretekov. Účasť na pretekoch nie je povinná a vždy závisí predovšetkým od pripravenosti a zdravotného stavu dieťaťa. Účasť na pretekoch je možné vopred konzultovať s trénerkou.",
+    "text_05": "Primárne pre deti vo veku približne 5 až 10 rokov z Banskej Bystrice a okolia. Zaradenie konkrétneho dieťaťa potvrdí trénerka podľa skúseností a aktuálnych možností tréningovej skupiny.",
     "text_16": "Čo potrebuje dieťa na tréning?",
     "text_06": "Musí už dieťa vedieť lyžovať?",
-    "text_17": "Na suchú prípravu vhodné športové oblečenie, obuv a vodu. Na sneh primeranú lyžiarsku výstroj vrátane prilby. Presný zoznam podľa typu tréningu poskytne trénerka.",
-    "text_07": "Požadovanú vstupnú úroveň ešte klub upresní. Napíšte nám vek a lyžiarske skúsenosti dieťaťa a spoločne preveríme vhodnosť zaradenia.",
-    "text_18": "Ako funguje výjazd do Kreischbergu?",
+    "text_17": "Na suchú prípravu v závislosti od typu tréningu predovšetkým vhodné športové oblečenie, obuv a vodu, prípadne ďalšiu určenú výstroj (korčule, bicykel, chrániče, prilbu, švihadlo a pod.) Na sneh primeranú lyžiarsku výstroj vrátane prilby. Presný zoznam podľa typu tréningu poskytne trénerka vopred.",
+    "text_07": "Požadovaná vstupná úroveň sa upresní na základe aktuálnych tréningových skupín. Napíšte nám vek a lyžiarske skúsenosti dieťaťa a spoločne preveríme vhodnosť zaradenia.",
+    "text_18": "Ako funguje lyžiarsky výjazd do zahraničia?",
     "text_08": "Ako často a kde sú tréningy?",
-    "text_19": "Plánuje sa spoločný lyžiarsky výjazd. Informácie o termíne, ubytovaní, doprave, skipasoch, dozore a konečnej cene dostanú rodičia v samostatných organizačných pokynoch.",
-    "text_09": "Štandardne dvakrát týždenne. Na jeseň prebieha suchá pohybová príprava, v zime tréningy na snehu. Konkrétne časy a miesta budú uvedené v aktuálnom rozvrhu."
+    "text_19": "Plánuje sa spoločný lyžiarsky výjazd. Informácie o termíne, ubytovaní, doprave, skipasoch, denného harmonogramu, dozore a konečnej cene dostanú rodičia v samostatných organizačných pokynoch.",
+    "text_09": "Štandardne dvakrát týždenne v Banskej Bystrici a okolí. Na jeseň prebieha suchá pohybová príprava, v zime tréningy na svahu v niektorom z lyžiarskych stredísk. Konkrétne časy a miesta sú dostupné pre členov klubu. Pre bližšie informácie nás kontaktujte."
   },
   "galeria": {
     "text_01": "Zo života klubu",
@@ -109,13 +109,13 @@
   },
   "footer": {
     "text_01": "hu",
-    "text_02": "SKI",
+    "text_02": "SKi",
     "text_03": "es",
     "text_04": "Malí lyžiari. Veľké zážitky.",
     "text_05": "Kontakt",
     "text_06": "skihuskiesbb@gmail.com",
     "text_07": "+421 949 783 283",
-    "text_08": "huSKIes"
+    "text_08": "huSKies"
   },
   "treningy": {
     "text_10": "03 / SEZÓNA",
