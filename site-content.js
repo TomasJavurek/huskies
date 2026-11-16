@@ -30,7 +30,7 @@ fetch('content/site.json').then(response => {
   const imagePath = value => typeof value === 'string' && /^(?:\/images\/|\/logo-huskies\.png$|\/hero-huskies\.jpg$)/.test(value) ? value : null;
   const logo = imagePath(pictures.logo), hero = imagePath(pictures.uvod), coach = imagePath(pictures.treneri);
   if (logo) document.querySelector('.nav .logo img').src = logo;
-  if (hero) document.querySelector('.hero-photo').style.backgroundImage = `url(${JSON.stringify(hero)})`;
+  if (hero) document.querySelector('.hero-photo').src = hero;
   if (coach) document.querySelector('.club-photo').src = coach;
   if (Array.isArray(pictures.galeria)) {
     const gallery = document.querySelector('.gallery');
