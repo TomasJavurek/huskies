@@ -6,7 +6,6 @@ if (carousel) {
   let active = 0;
   let rotationTimer;
   let flickerTimer;
-  let flashTimer;
 
   const validPhotos = items => items.filter(item => item && typeof item.obrazok === 'string' && /^(?:\/images\/|images\/)/.test(item.obrazok));
   photos = validPhotos(photos);
@@ -42,8 +41,10 @@ if (carousel) {
 
   function flicker() {
     carousel.classList.add('signal-color');
-    flashTimer = setTimeout(() => carousel.classList.remove('signal-color'), 450);
-    flickerTimer = setTimeout(flicker, 2000);
+    setTimeout(() => carousel.classList.remove('signal-color'), 160);
+    setTimeout(() => carousel.classList.add('signal-color'), 240);
+    setTimeout(() => carousel.classList.remove('signal-color'), 400);
+    flickerTimer = setTimeout(flicker, 4000);
   }
 
   function resetPhotos(items) {
@@ -63,5 +64,5 @@ if (carousel) {
   }).then(content => resetPhotos(content.obrazky?.galeria || [])).catch(() => {});
   document.addEventListener('huskies:gallery', event => resetPhotos(event.detail || []));
   scheduleRotation();
-  flickerTimer = setTimeout(flicker, 2000);
+  flickerTimer = setTimeout(flicker, 4000);
 }
