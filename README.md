@@ -25,3 +25,7 @@ Obsah je v `content/site.json`; stránka si ho načítava cez JavaScript. Pri lo
 Stránka `/navrh/` umožňuje upraviť texty a obrázky bez prihlásenia. Tlačidlo stiahne HTML návrh vrátane fotografií; používateľ potom otvorí e-mail a súbor ručne priloží k správe pre `tomas.javurek@kinit.sk`. Návrh sa sám neodošle ani nezverejní a nenahrádza zdrojové súbory — zmeny treba skontrolovať a ručne preniesť do obsahu stránky. Pri viacerých alebo veľkých fotografiách môže príloha prekročiť limit e-mailovej služby.
 
 Decap Turbo zostáva pripravený na dokončenie: Site ID je doplnené; treba nahrať zmeny, nastaviť oprávnenia a ochranu vetvy a vyskúšať prihlásenie aj vytvorenie návrhu na kontrolu.
+
+## Alternatívny úvod
+
+Pôvodný úvodný obrázok so slalomovou animáciou je zachovaný v `alternatives/hero-slalom/`. Aktuálny úvod používa fotografie z galérie, strieda ich každé štyri sekundy a upravuje ich farby v CSS. Pri zníženom pohybe zostane prvá fotografia statická.

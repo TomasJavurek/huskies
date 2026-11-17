@@ -30,7 +30,7 @@ fetch('content/site.json').then(response => {
   const imagePath = value => typeof value === 'string' && /^(?:\/images\/|\/logo-huskies\.png$|\/hero-huskies\.jpg$)/.test(value) ? value : null;
   const logo = imagePath(pictures.logo), hero = imagePath(pictures.uvod), coach = imagePath(pictures.treneri);
   if (logo) document.querySelector('.nav .logo img').src = logo;
-  if (hero) document.querySelector('.hero-photo').src = hero;
+  if (hero) document.querySelector('.hero-photo')?.setAttribute('src', hero);
   if (coach) document.querySelector('.club-photo').src = coach;
   if (Array.isArray(pictures.galeria)) {
     const gallery = document.querySelector('.gallery');
@@ -42,5 +42,6 @@ fetch('content/site.json').then(response => {
       return [img];
     });
     gallery.replaceChildren(...images);
+    document.dispatchEvent(new CustomEvent('huskies:gallery', {detail: pictures.galeria}));
   }
 }).catch(error => console.warn('Nepodarilo sa načítať obsah stránky:', error));

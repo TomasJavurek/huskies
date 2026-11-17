@@ -59,7 +59,7 @@
           return fileToData(await read(url.href).then(r => r.blob()));
         };
         const [logo, hero, coach, ...gallery] = await Promise.all([content.obrazky.logo,content.obrazky.uvod,content.obrazky.treneri,...content.obrazky.galeria.map(item => item.obrazok)].map(encode));
-        doc.querySelector('.nav .logo img').src = logo; doc.querySelector('.hero-photo').src = hero; doc.querySelector('.club-photo').src = coach;
+        doc.querySelector('.nav .logo img').src = logo; doc.querySelector('.hero-carousel .hero-slide').src = gallery[0] || hero; doc.querySelector('.club-photo').src = coach;
         const galleryEl = doc.querySelector('.gallery'); galleryEl.replaceChildren();
         gallery.forEach((src, i) => {const img = doc.createElement('img'); img.src = src; img.alt = content.obrazky.galeria[i].popis || ''; galleryEl.append(img);});
         const email = doc.querySelector('#kontakt a[href^="mailto:"]')?.textContent.trim();
@@ -67,6 +67,7 @@
         if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) doc.querySelectorAll('a[href^="mailto:"]').forEach(a => { const subject = a.getAttribute('href').split('?')[1]; a.setAttribute('href', `mailto:${email}${subject ? '?'+subject : ''}`); if (a.closest('footer')) a.textContent = email; });
         if (phone && /^[+0-9 ()-]+$/.test(phone)) doc.querySelectorAll('a[href^="tel:"]').forEach(a => {a.setAttribute('href', `tel:${phone.replace(/[ ()-]/g,'')}`); if (a.closest('footer')) a.textContent = phone;});
         doc.querySelector('script[src="site-content.js"]')?.remove();
+        doc.querySelector('script[src="hero-carousel.js"]')?.remove();
         doc.querySelectorAll('a[href="admin/"],a[href="navrh/"]').forEach(a => a.remove());
         const blob = new Blob(['<!doctype html>\n',doc.documentElement.outerHTML], {type:'text/html;charset=utf-8'});
         const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href=url; a.download='huskies-navrh.html'; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 10000);
