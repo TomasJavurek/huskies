@@ -7,12 +7,22 @@ if (slalom && !reducedMotion.matches) {
   const skier = slalom.querySelector('.slalom-skier');
   const routeLength = route.getTotalLength();
   const trailLength = 130; // Roughly two to three pole intervals.
+  const segments = Array.from({length: 18}, (_, i) => {
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.style.opacity = String(0.5 * (i + 1) / 18);
+    trail.append(path);
+    return path;
+  });
   const duration = 8500;
   let start;
 
+  function clearTrail() {
+    segments.forEach(segment => segment.removeAttribute('d'));
+  }
+
   function frame(time) {
     if (reducedMotion.matches) {
-      trail.removeAttribute('d');
+      clearTrail();
       return;
     }
     if (start === undefined) start = time;
@@ -23,12 +33,17 @@ if (slalom && !reducedMotion.matches) {
       skier.setAttribute('cx', point.x);
       skier.setAttribute('cy', point.y);
       const beginning = Math.max(0, distance - trailLength);
-      const steps = Math.max(2, Math.ceil((distance - beginning) / 5));
-      const points = Array.from({length: steps + 1}, (_, i) => route.getPointAtLength(beginning + (distance - beginning) * i / steps));
-      trail.setAttribute('d', points.map((p, i) => `${i ? 'L' : 'M'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' '));
+      const span = distance - beginning;
+      segments.forEach((segment, i) => {
+        if (span < 1) { segment.removeAttribute('d'); return; }
+        const from = route.getPointAtLength(beginning + span * i / segments.length);
+        const middle = route.getPointAtLength(beginning + span * (i + 0.5) / segments.length);
+        const to = route.getPointAtLength(beginning + span * (i + 1) / segments.length);
+        segment.setAttribute('d', `M ${from.x} ${from.y} L ${middle.x} ${middle.y} L ${to.x} ${to.y}`);
+      });
       skier.style.opacity = '0.8';
     } else {
-      trail.removeAttribute('d');
+      clearTrail();
       skier.style.opacity = '0';
     }
     requestAnimationFrame(frame);
