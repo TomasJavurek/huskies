@@ -1,6 +1,5 @@
 const carousel = document.querySelector('.hero-carousel');
 if (carousel) {
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const slides = [...carousel.querySelectorAll('.hero-slide')];
   let photos = [...document.querySelectorAll('.gallery img')].map(img => ({obrazok: img.getAttribute('src'), popis: img.alt}));
   let current = 0;
@@ -14,7 +13,7 @@ if (carousel) {
 
   function scheduleRotation() {
     clearTimeout(rotationTimer);
-    if (photos.length > 1) rotationTimer = setTimeout(rotate, 4000);
+    if (photos.length > 1) rotationTimer = setTimeout(rotate, 5000);
   }
 
   function show(index, attempts = 0) {
@@ -42,10 +41,9 @@ if (carousel) {
   }
 
   function flicker() {
-    if (reducedMotion.matches) return;
     carousel.classList.add('signal-color');
-    flashTimer = setTimeout(() => carousel.classList.remove('signal-color'), 360);
-    flickerTimer = setTimeout(flicker, 3000 + Math.random() * 2500);
+    flashTimer = setTimeout(() => carousel.classList.remove('signal-color'), 450);
+    flickerTimer = setTimeout(flicker, 2000);
   }
 
   function resetPhotos(items) {
@@ -65,11 +63,5 @@ if (carousel) {
   }).then(content => resetPhotos(content.obrazky?.galeria || [])).catch(() => {});
   document.addEventListener('huskies:gallery', event => resetPhotos(event.detail || []));
   scheduleRotation();
-  if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 2200 + Math.random() * 1800);
-  reducedMotion.addEventListener('change', () => {
-    clearTimeout(flickerTimer);
-    clearTimeout(flashTimer);
-    carousel.classList.remove('signal-color');
-    if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 2200 + Math.random() * 1800);
-  });
+  flickerTimer = setTimeout(flicker, 2000);
 }
