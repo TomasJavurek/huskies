@@ -7,7 +7,7 @@ if (carousel) {
   let active = 0;
   let rotationTimer;
   let flickerTimer;
-  let flashTimers = [];
+  let flashTimer;
 
   const validPhotos = items => items.filter(item => item && typeof item.obrazok === 'string' && /^(?:\/images\/|images\/)/.test(item.obrazok));
   photos = validPhotos(photos);
@@ -43,11 +43,9 @@ if (carousel) {
 
   function flicker() {
     if (reducedMotion.matches) return;
-    carousel.classList.add('signal-loss');
-    flashTimers.push(setTimeout(() => carousel.classList.remove('signal-loss'), 115));
-    flashTimers.push(setTimeout(() => carousel.classList.add('signal-loss'), 205));
-    flashTimers.push(setTimeout(() => carousel.classList.remove('signal-loss'), 285));
-    flickerTimer = setTimeout(flicker, 5500 + Math.random() * 4500);
+    carousel.classList.add('signal-color');
+    flashTimer = setTimeout(() => carousel.classList.remove('signal-color'), 360);
+    flickerTimer = setTimeout(flicker, 3000 + Math.random() * 2500);
   }
 
   function resetPhotos(items) {
@@ -67,12 +65,11 @@ if (carousel) {
   }).then(content => resetPhotos(content.obrazky?.galeria || [])).catch(() => {});
   document.addEventListener('huskies:gallery', event => resetPhotos(event.detail || []));
   scheduleRotation();
-  if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 3500 + Math.random() * 3500);
+  if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 2200 + Math.random() * 1800);
   reducedMotion.addEventListener('change', () => {
     clearTimeout(flickerTimer);
-    flashTimers.forEach(clearTimeout);
-    flashTimers = [];
-    carousel.classList.remove('signal-loss');
-    if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 3500 + Math.random() * 3500);
+    clearTimeout(flashTimer);
+    carousel.classList.remove('signal-color');
+    if (!reducedMotion.matches) flickerTimer = setTimeout(flicker, 2200 + Math.random() * 1800);
   });
 }

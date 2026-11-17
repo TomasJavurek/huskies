@@ -19,11 +19,11 @@ body{font-family:Montserrat,Arial,sans-serif}.logo{display:flex;align-items:cent
 
 /* The hero uses the same image list as the gallery, including later CMS uploads. */
 .hero-carousel{position:relative;width:100%;height:clamp(390px,45vw,540px);overflow:hidden;border-radius:22px;background:#d9d5d7;box-shadow:var(--shadow);isolation:isolate}
-.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;filter:grayscale(.32) sepia(.28) saturate(.72) contrast(1.08);transition:opacity .9s ease}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;filter:grayscale(1) contrast(1.12);transition:opacity .9s ease}
 .hero-slide.is-active{opacity:1;animation:hero-zoom 4.4s ease-out both}
-.hero-carousel::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(122,13,48,.22),rgba(46,46,46,.13));mix-blend-mode:multiply;pointer-events:none}
-.hero-carousel.signal-loss .hero-slide{filter:grayscale(1) contrast(1.35) brightness(1.08)}
-.hero-carousel.signal-loss::after{opacity:0}
+.hero-carousel::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(46,46,46,.04),rgba(46,46,46,.16));mix-blend-mode:multiply;pointer-events:none}
+.hero-carousel.signal-color .hero-slide{filter:sepia(.12) saturate(1.18) contrast(1.08)}
+.hero-carousel.signal-color::after{background:linear-gradient(135deg,rgba(122,13,48,.16),rgba(46,46,46,.09))}
 @keyframes hero-zoom{from{transform:scale(1)}to{transform:scale(1.13)}}
 @media(max-width:620px){.hero-carousel{height:420px}}
 @media(prefers-reduced-motion:reduce){.hero-slide,.hero-slide.is-active{animation:none;transition:none}}

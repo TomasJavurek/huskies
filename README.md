@@ -28,4 +28,4 @@ Decap Turbo zostáva pripravený na dokončenie: Site ID je doplnené; treba nah
 
 ## Alternatívny úvod
 
-Pôvodný úvodný obrázok so slalomovou animáciou je zachovaný v `alternatives/hero-slalom/`. Aktuálny úvod používa fotografie z galérie, strieda ich každé štyri sekundy a upravuje ich farby v CSS. Pri zníženom pohybe zostane prvá fotografia statická.
+Pôvodný úvodný obrázok so slalomovou animáciou je zachovaný v `alternatives/hero-slalom/`. Aktuálny úvod používa fotografie z galérie, strieda ich každé štyri sekundy a zobrazuje ich čiernobielo s krátkymi farebnými zábleskami. Pri zníženom pohybe zostane prvá fotografia statická.
