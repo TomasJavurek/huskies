@@ -6,10 +6,10 @@ if (slalom && !reducedMotion.matches) {
   const trail = slalom.querySelector('.slalom-trail');
   const skier = slalom.querySelector('.slalom-skier');
   const routeLength = route.getTotalLength();
-  const trailLength = 130; // Roughly two to three pole intervals.
+  const trailLength = 150; // Roughly two to three pole intervals.
   const segments = Array.from({length: 18}, (_, i) => {
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.style.opacity = String(0.5 * (i + 1) / 18);
+    path.style.opacity = String(0.1 + 0.68 * (i + 1) / 18);
     trail.append(path);
     return path;
   });
