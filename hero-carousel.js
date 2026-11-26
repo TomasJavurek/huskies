@@ -14,8 +14,13 @@ if (carousel) {
   let rotationTimer;
   let signalTimers = [];
 
-  const validPhotos = items => items.filter(item => item && typeof item.obrazok === 'string' && /^(?:\/images\/|images\/)/.test(item.obrazok));
-  photos = validPhotos(photos);
+  const forestWalk = 'images/ski-3.jpg';
+  const heroPhotos = items => items.filter(item => {
+    if (typeof item?.obrazok !== 'string') return false;
+    const path = item.obrazok.replace(/^\//, '');
+    return path.startsWith('images/') && path !== forestWalk;
+  });
+  photos = heroPhotos(photos);
 
   function scheduleRotation() {
     clearTimeout(rotationTimer);
@@ -72,7 +77,7 @@ if (carousel) {
   }
 
   function resetPhotos(items) {
-    const list = validPhotos(items);
+    const list = heroPhotos(items);
     if (!list.length) return;
     photos = list;
     current = 0;
