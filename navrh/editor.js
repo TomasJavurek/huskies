@@ -2,7 +2,7 @@
   const root = document.getElementById('editor');
   const status = document.getElementById('status');
   const download = document.getElementById('download');
-  const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error(`Nepodarilo sa načítať ${url}`); return response; };
+  const read = async url => { const response = await fetch(url, { cache: 'no-cache' }); if (!response.ok) throw new Error(`Nepodarilo sa načítať ${url}`); return response; };
   try {
     const [content, config, template] = await Promise.all([
       read('../content/site.json').then(r => r.json()),
@@ -70,8 +70,7 @@
         const phone = doc.querySelector('#kontakt a[href^="tel:"]')?.textContent.trim();
         if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) doc.querySelectorAll('a[href^="mailto:"]').forEach(a => { const subject = a.getAttribute('href').split('?')[1]; a.setAttribute('href', `mailto:${email}${subject ? '?'+subject : ''}`); if (a.closest('footer')) a.textContent = email; });
         if (phone && /^[+0-9 ()-]+$/.test(phone)) doc.querySelectorAll('a[href^="tel:"]').forEach(a => {a.setAttribute('href', `tel:${phone.replace(/[ ()-]/g,'')}`); if (a.closest('footer')) a.textContent = phone;});
-        doc.querySelector('script[src="site-content.js"]')?.remove();
-        doc.querySelector('script[src="hero-carousel.js"]')?.remove();
+        doc.querySelectorAll('script[src="site-content.js"], script[src^="site-content.js?"], script[src="hero-carousel.js"], script[src^="hero-carousel.js?"]').forEach(script => script.remove());
         doc.querySelectorAll('a[href="admin/"],a[href="navrh/"]').forEach(a => a.remove());
         const blob = new Blob(['<!doctype html>\n',doc.documentElement.outerHTML], {type:'text/html;charset=utf-8'});
         const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href=url; a.download='huskies-navrh.html'; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 10000);

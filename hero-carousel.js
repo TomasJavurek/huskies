@@ -14,11 +14,16 @@ if (carousel) {
   let rotationTimer;
   let signalTimers = [];
 
-  const forestWalk = 'images/ski-3.jpg';
+  const galleryOnly = new Set([
+    'images/ski-3.jpg',
+    'images/uploads/julka_alps.jpg',
+    'images/uploads/jullka_hola.jpg',
+    'images/uploads/maco.jpg',
+  ]);
   const heroPhotos = items => items.filter(item => {
     if (typeof item?.obrazok !== 'string') return false;
     const path = item.obrazok.replace(/^\//, '');
-    return path.startsWith('images/') && path !== forestWalk;
+    return path.startsWith('images/') && !galleryOnly.has(path);
   });
   photos = heroPhotos(photos);
 
@@ -87,7 +92,7 @@ if (carousel) {
   }
 
   // Load the CMS data directly; the carousel continues with the HTML images if it is unavailable.
-  fetch('content/site.json').then(response => {
+  fetch('content/site.json', { cache: 'no-cache' }).then(response => {
     if (!response.ok) throw new Error('Gallery data unavailable');
     return response.json();
   }).then(content => resetPhotos(content.obrazky?.galeria || [])).catch(() => {});

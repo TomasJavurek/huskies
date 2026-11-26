@@ -1,5 +1,5 @@
 // Keep the original HTML as a fallback if content cannot be loaded.
-fetch('content/site.json').then(response => {
+fetch('content/site.json', { cache: 'no-cache' }).then(response => {
   if (!response.ok) throw new Error('Content unavailable');
   return response.json();
 }).then(content => {
