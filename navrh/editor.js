@@ -59,7 +59,11 @@
           return fileToData(await read(url.href).then(r => r.blob()));
         };
         const [logo, hero, coach, ...gallery] = await Promise.all([content.obrazky.logo,content.obrazky.uvod,content.obrazky.treneri,...content.obrazky.galeria.map(item => item.obrazok)].map(encode));
-        doc.querySelector('.nav .logo img').src = logo; doc.querySelector('.hero-carousel .hero-slide').src = gallery[0] || hero; doc.querySelector('.club-photo').src = coach;
+        const logoImage = doc.querySelector('.nav .logo img');
+        logoImage.src = logo;
+        logoImage.toggleAttribute('data-default-logo', /^\/?logo-huskies\.png$/.test(content.obrazky.logo));
+        doc.querySelector('.hero-carousel .hero-slide').src = gallery[0] || hero;
+        doc.querySelector('.club-photo').src = coach;
         const galleryEl = doc.querySelector('.gallery'); galleryEl.replaceChildren();
         gallery.forEach((src, i) => {const img = doc.createElement('img'); img.src = src; img.alt = content.obrazky.galeria[i].popis || ''; galleryEl.append(img);});
         const email = doc.querySelector('#kontakt a[href^="mailto:"]')?.textContent.trim();
