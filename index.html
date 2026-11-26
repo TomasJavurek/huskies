@@ -38,16 +38,42 @@ body{font-family:Montserrat,Arial,sans-serif}.logo{display:flex;align-items:cent
   widows: 3;
 }
 .hero .membership-notice {
-  display: inline-block;
-  margin: 8px 0 12px;
-  padding: 6px 14px;
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 12px auto 28px;
+  padding: 11px 22px;
   border-radius: 100px;
   background: var(--sky);
   color: var(--burgundy);
-  font-size: .85rem;
+  font-size: 1.08rem;
   font-weight: 750;
+  text-align: center;
 }
-.hero .membership-notice + .hero-actions { margin-top: 0; }
+.membership-arrow {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: calc(50% - 60px);
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.hero .membership-notice + .hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+  text-align: center;
+}
+.membership-notice + .hero-actions .primary { justify-self: end; }
+.membership-notice + .hero-actions .secondary { justify-self: start; }
+@media (max-width: 520px) {
+  .membership-arrow { left: 50%; }
+  .hero .membership-notice + .hero-actions {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .membership-notice + .hero-actions .btn { justify-self: center; }
+}
 .hero-carousel::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(46,46,46,.04),rgba(46,46,46,.16));mix-blend-mode:multiply;pointer-events:none}
 .hero-tear {
   position: absolute;
@@ -89,7 +115,7 @@ body{font-family:Montserrat,Arial,sans-serif}.logo{display:flex;align-items:cent
 
 <header class="nav"><div class="container nav-inner"><a href="#domov" class="logo" aria-label="huSKIes domov"><img src="logo-huskies.png" alt="huSKIes – detský lyžiarsky klub"></a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span data-edit-group="header" data-edit-key="text_01">☰ Menu</span></button><nav class="nav-links" id="nav-links" aria-label="Hlavná navigácia"><a href="#o-nas"><span data-edit-group="header" data-edit-key="text_02">O nás</span></a><a href="#treningy"><span data-edit-group="header" data-edit-key="text_03">Tréningy</span></a><a href="#treneri"><span data-edit-group="header" data-edit-key="text_04">Tréneri</span></a><a href="#clenstvo"><span data-edit-group="header" data-edit-key="text_05">Členstvo</span></a><a href="#faq"><span data-edit-group="header" data-edit-key="text_06">FAQ</span></a><a class="btn primary" href="#kontakt"><span data-edit-group="header" data-edit-key="text_07">Pridaj sa k nám</span></a></nav></div></header>
 <main>
-<section class="hero" id="domov"><div class="container hero-grid"><div><div class="eyebrow"><span data-edit-group="domov" data-edit-key="text_01">Detský lyžiarsky klub · Banská Bystrica a okolie</span></div><h1><span data-edit-group="domov" data-edit-key="text_02">Malí lyžiari.</span><br><span data-edit-group="domov" data-edit-key="text_03">Veľké zážitky.</span></h1><p><span data-edit-group="domov" data-edit-key="text_04">Budujeme radosť z pohybu, istotu na lyžiach a partiu, do ktorej sa deti tešia. Pre deti približne od 5 do 10 rokov.</span></p><p class="membership-notice">Prijímame nových členov</p><div class="hero-actions"><a class="btn primary" href="#kontakt"><span data-edit-group="domov" data-edit-key="text_05">Mám záujem o členstvo →</span></a><a class="btn secondary" href="#treningy"><span data-edit-group="domov" data-edit-key="text_06">Ako trénujeme</span></a></div><div class="chips"><span class="chip"><span data-edit-group="domov" data-edit-key="text_07">⛷️ Lyžovanie</span></span><span class="chip"><span data-edit-group="domov" data-edit-key="text_08">🏃 Všestranný pohyb</span></span><span class="chip"><span data-edit-group="domov" data-edit-key="text_09">🤝 Komunita</span></span></div></div><div><div class="hero-carousel" aria-label="Fotografie zo života klubu"><img class="hero-slide is-active" src="images/ski-2.jpg" alt="Lyžovanie s klubom huSKIes"><img class="hero-slide" alt="" aria-hidden="true"></div></div></div></section>
+<section class="hero" id="domov"><div class="container hero-grid"><div><div class="eyebrow"><span data-edit-group="domov" data-edit-key="text_01">Detský lyžiarsky klub · Banská Bystrica a okolie</span></div><h1><span data-edit-group="domov" data-edit-key="text_02">Malí lyžiari.</span><br><span data-edit-group="domov" data-edit-key="text_03">Veľké zážitky.</span></h1><p><span data-edit-group="domov" data-edit-key="text_04">Budujeme radosť z pohybu, istotu na lyžiach a partiu, do ktorej sa deti tešia. Pre deti približne od 5 do 10 rokov.</span></p><p class="membership-notice">Prijímame nových členov<span class="membership-arrow" aria-hidden="true">↓</span></p><div class="hero-actions"><a class="btn primary" href="#kontakt"><span data-edit-group="domov" data-edit-key="text_05">Mám záujem o členstvo →</span></a><a class="btn secondary" href="#treningy"><span data-edit-group="domov" data-edit-key="text_06">Ako trénujeme</span></a></div><div class="chips"><span class="chip"><span data-edit-group="domov" data-edit-key="text_07">⛷️ Lyžovanie</span></span><span class="chip"><span data-edit-group="domov" data-edit-key="text_08">🏃 Všestranný pohyb</span></span><span class="chip"><span data-edit-group="domov" data-edit-key="text_09">🤝 Komunita</span></span></div></div><div><div class="hero-carousel" aria-label="Fotografie zo života klubu"><img class="hero-slide is-active" src="images/ski-2.jpg" alt="Lyžovanie s klubom huSKIes"><img class="hero-slide" alt="" aria-hidden="true"></div></div></div></section>
 <section class="section" id="o-nas"><div class="container"><div class="section-head"><div class="eyebrow"><span data-edit-group="o-nas" data-edit-key="text_01">Naša filozofia</span></div><h2><span data-edit-group="o-nas" data-edit-key="text_02">Viac než len lyžovanie</span></h2></div>
 <p class="philosophy-copy" data-edit-group="o-nas" data-edit-key="text_03">Chceme, aby deti športovali s radosťou, rozvíjali svoje fyzické i mentálne schopnosti a vytvárali si priateľstvá. Záleží nám aj na dobrej partii rodičov, pretože práve oni sú hlavnou súčasťou života detí.
 
