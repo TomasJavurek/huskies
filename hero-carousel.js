@@ -12,13 +12,38 @@ if (carousel) {
   let current = 0;
   let active = 0;
   let rotationTimer;
+  let signalTimers = [];
 
   const validPhotos = items => items.filter(item => item && typeof item.obrazok === 'string' && /^(?:\/images\/|images\/)/.test(item.obrazok));
   photos = validPhotos(photos);
 
   function scheduleRotation() {
     clearTimeout(rotationTimer);
-    if (!reducedMotion.matches && photos.length > 1) rotationTimer = setTimeout(rotate, 5000);
+    signalTimers.forEach(timer => clearTimeout(timer));
+    signalTimers = [];
+    if (reducedMotion.matches || photos.length < 2) return;
+
+    const displayTime = 5000;
+    const firstPossibleSlip = 900;
+    const minimumGap = 750;
+    const latestStart = displayTime - minimumGap;
+    const count = 1 + Math.floor(Math.random() * 3);
+    const randomWindow = latestStart - firstPossibleSlip - (count - 1) * minimumGap;
+    // Space the randomized starts so each animation has time to finish.
+    const starts = Array.from({ length: count }, () => Math.random() * randomWindow);
+    starts.sort((a, b) => a - b);
+    signalTimers = starts.map((delay, index) =>
+      setTimeout(playSignalSlip, firstPossibleSlip + delay + index * minimumGap)
+    );
+    rotationTimer = setTimeout(rotate, displayTime);
+  }
+
+  function playSignalSlip() {
+    if (reducedMotion.matches || document.hidden || carousel.classList.contains('signal-slip')) return;
+    const slide = slides[active];
+    tear.src = slide.src;
+    tear.style.transform = getComputedStyle(slide).transform;
+    carousel.classList.add('signal-slip');
   }
 
   function show(index, attempts = 0) {
@@ -34,8 +59,6 @@ if (carousel) {
       slides[active].setAttribute('aria-hidden', 'true');
       slides[next].classList.add('is-active');
       slides[active].classList.remove('is-active');
-      tear.src = photo.obrazok;
-      carousel.classList.add('signal-slip');
       active = next;
       current = index;
       scheduleRotation();

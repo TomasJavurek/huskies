@@ -28,4 +28,4 @@ Decap Turbo zostáva pripravený na dokončenie: Site ID je doplnené; treba nah
 
 ## Alternatívny úvod
 
-Pôvodný úvodný obrázok so slalomovou animáciou je zachovaný v `alternatives/hero-slalom/`. Aktuálny úvod strieda čiernobiele fotografie z galérie každých päť sekúnd. Pri prechode sa v úzkom vodorovnom páse krátko posunie obraz, podobne ako pri rušení analógového televízneho signálu. Pri zapnutej systémovej voľbe na obmedzenie pohybu zostáva fotografia statická.
+Pôvodný úvodný obrázok so slalomovou animáciou je zachovaný v `alternatives/hero-slalom/`. Aktuálny úvod strieda čiernobiele fotografie z galérie každých päť sekúnd. Počas zobrazenia každej fotografie sa obraz v náhodných okamihoch krátko posunie v úzkom vodorovnom páse, podobne ako pri rušení analógového televízneho signálu. Efekt sa objaví v priemere dvakrát na fotografiu. Pri zapnutej systémovej voľbe na obmedzenie pohybu zostáva fotografia statická.
